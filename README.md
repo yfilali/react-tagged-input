@@ -53,6 +53,7 @@ ReactDOM.render(
     autofocus={true} // Gives the component focus after it mounts
     backspaceDeletesWord={true} // false deletes one character at a time
     placeholder={'Your favorite npm modules'}
+    forcePlaceholder={true} // force showing placeholder in input even with existing tags
     tags={['javascript', 'react']} // pre-assigned tags
     onEnter={/*function*/}
     onAddTag={/*function*/} // argument - tag that was added

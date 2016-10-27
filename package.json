@@ -29,7 +29,7 @@
     ]
   },
   "peerDependencies": {
-    "react": ">=0.14 < 0.15"
+    "react": ">=0.14 <0.16"
   },
   "devDependencies": {
     "babel": "^5.8.20",
@@ -38,15 +38,15 @@
     "grunt-cli": "^0.1.13",
     "grunt-contrib-watch": "^0.6.1",
     "grunt-jsxhint-babel": "^0.6.1",
-    "grunt-react": "^0.12.2",
+    "grunt-react": "^0.12.3",
     "grunt-webpack": "^1.0.8",
-    "jsdom": "^3.0",
-    "jsx-loader": "^0.12.2",
-    "jsx-test": "^0.8.0",
-    "mocha": "^2.2.5",
-    "node-libs-browser": "^0.5.2",
-    "react": "^0.14.2",
-    "react-dom": "^0.14.2",
+    "jsdom": "^9.8",
+    "jsx-loader": "^0.13.2",
+    "jsx-test": "^2.0.1",
+    "mocha": "^3.1.2",
+    "node-libs-browser": "^1.0.0",
+    "react": "^15.3.2",
+    "react-dom": "^15.3.2",
     "sinon": "^1.15.4",
     "sinon-chai": "^2.8.0",
     "webpack": "^1.4.13",

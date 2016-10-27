@@ -56,6 +56,7 @@ module.exports = React.createClass({
       backspaceDeletesWord: true,
       tagOnBlur: false,
       clickTagToEdit: false,
+      forcePlaceholder: false,
       onBeforeAddTag: function (tag) {
         return true;
       },
@@ -84,7 +85,7 @@ module.exports = React.createClass({
       classes += ' ' + p.classes;
     }
 
-    if (s.tags.length === 0) {
+    if (s.tags.length === 0 && !p.forcePlaceholder) {
       placeholder = p.placeholder;
     }
 
@@ -112,7 +113,7 @@ module.exports = React.createClass({
         onKeyDown={this._handleKeyDown}
         onChange={this._handleChange}
         onBlur={this._handleBlur}
-        value={s.currentInput}
+        value={s.currentInput || ''}
         placeholder={placeholder}
         tabIndex={p.tabIndex}>
       </input>
