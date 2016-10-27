@@ -85,7 +85,7 @@ module.exports = React.createClass({
       classes += ' ' + p.classes;
     }
 
-    if (s.tags.length === 0 && !p.forcePlaceholder) {
+    if (p.forcePlaceholder || s.tags.length === 0) {
       placeholder = p.placeholder;
     }
 
